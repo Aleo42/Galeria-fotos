@@ -1,0 +1,67 @@
+/*specs del header*/
+h1{
+    display: flex; /*utilizamos flex*/
+    background-color: blue; /*Color del encabezado*/
+    font-family: Arial, Helvetica, sans-serif; /*Fuente del texto*/
+    color: white;/*color del texto*/
+    height: 100px; /*alto de la etiqueta*/
+    justify-content: center; /*Centra horizontal*/
+    align-items: center; /*Centra vertical*/
+    border-radius: 8px; /*Asignamos bordes curvos a la cabecera*/
+}
+/*specs del contenedor de la tabla general*/
+.grid-container{ 
+    display: grid; /*Activamos el Grid Layout*/
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); /*Ajuste de tamaño de las columnas*/
+    grid-template-rows: repeat(auto-fill, minmax(150PX, 1fr)); /*Ajuste de tamaño de las filas*/
+    gap: 1em;/*Tamaño del espaciado en filas y columnas*/
+    justify-items: center; /*Ajustar toda las filas e items al centro (horizontal)*/
+    align-items: center; /*Ajustar todas las columnas al centro (vertical)*/
+    padding: 30px; /* Separación con respecto al borde de la pantalla*/
+}
+
+/*specs de contenedor de la tabla de cada objeto*/
+.grid-container a{
+    display: flex; /*Activamos flex*/
+    flex-direction: column; /*Alinear elementos por columna*/
+    align-items: center;/*Alinear elementos al centro*/
+    text-decoration: none; /*Sin decoración para el texto*/
+    color: black; /*Color del texto*/
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra al rededor del container*/
+    padding: 10px; /*Separación con respecto al borde interno*/
+    border: 1px solid rgba(0, 0, 0, 0.3); /*Agrega el contorno con color negro 30% opaco*/
+    transition: transform 0.2s ease; /*Transición para animación suave*/
+    height: 230px; /*Fijamos la altura para todos los elmentos*/
+    justify-content: space-between; /*Distribuimos el espacio de manera uniforme para la imagen y el texto*/
+}
+
+/*efecto de zoom al pasar el mouse por encima*/
+.grid-container a:hover{
+    transform: scale(1.05); /* Agregar el efecto de zoom al pasar el cursor*/
+}
+
+/*specs para cada imagen (miniatura)*/
+.grid-container img {
+    width: 150px; /*Fijamos ancho*/
+    height: 150px; /*Fijamos altura*/
+    object-fit: cover; /*Ajusta las imagenes al tamaño sin distorsionarse*/
+    border-radius: 8px; /*Bordes redondeados de las imágenes*/
+}
+
+/*specs para la descripción de cada imagen*/
+.grid-container p {
+    display: flex; /*Activamos flex*/
+    margin-top: 10px; /*margen con respecto a la cabecera*/
+    text-align: center; /*Alineación del texto*/
+    font-size: 14px; /*Tamaño de la fuente del texto*/
+    color: #333; /*Color del texto de las imágenes*/
+    height: 40px; /*Fijar altura para el texto*/
+    align-items: center; /*centrar el texto vertical*/
+    justify-content: center;/*centrar el texto horizontal*/
+}
+
+/*efecto de zoom al pasar el mouse por encima*/
+.grid-container p:hover{
+    transform: scale(1.2);/*Agregamos efecto de zoom al pasar el cursor por el texto*/
+    text-decoration: underline;
+}
