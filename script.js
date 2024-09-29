@@ -2,7 +2,7 @@
 const gridContainer = document.getElementById('grid-container'); // Obtenemos el contenedor del grid
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('../service-worker.js')
+    navigator.serviceWorker.register('/service-worker.js')
     .then((registration) => {
         console.log('Service Worker registered');
     }).catch((error) => {
