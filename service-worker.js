@@ -28,7 +28,7 @@ self.addEventListener('fetch', (event) => {
             return fetch(event.request).then((networkResponse) => {
                 // Si la solicitud es exitosa, almacenamos en caché
                 if (networkResponse && networkResponse.status === 200 && event.request.url.includes('jsonplaceholder.typicode.com/photos')){
-                    return caches.open(CACHE_NAME).then((cache) => {
+                    return caches.open('PWA_CACHE').then((cache) => {
                         cache.put(event.request, networkResponse.clone());
                         return networkResponse;
                     });
