@@ -19,7 +19,7 @@ fetch('https://jsonplaceholder.typicode.com/photos')
         data.forEach((photo, index) => { 
             // Creamos el enlace de cada foto
             const anchor = document.createElement('a'); // Creamos el enlace
-            anchor.href = https://jsonplaceholder.typicode.com/photos/${photo.id}.html;
+            anchor.href = `https://jsonplaceholder.typicode.com/photos/${photo.id}.html`;
 
             // Creamos la imagen
             const img = document.createElement('img');
