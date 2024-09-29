@@ -1,9 +1,10 @@
 //const CACHE_NAME = 'gallery-cache-v1';
 const urlsToCache = [
     '/', //cacheamos la rama principal
-    '/index.html', //cacheamos el index o main
-    '/style.css', //cacheamos los estilos
-    '/script.js'//cacheamos los script
+    'index.html', //cacheamos el index o main
+    'style.css', //cacheamos los estilos
+    'script.js'//cacheamos los script
+    'manifest.json'//cacheamos los script
 ];
 
 // Instalación del evento del service worker, cacheando todos los recursos iniciales
