@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gallery-cache-v1';
+//const CACHE_NAME = 'gallery-cache-v1';
 const urlsToCache = [
     '/', //cacheamos la rama principal
     '/index.html', //cacheamos el index o main
