@@ -9,7 +9,7 @@ const urlsToCache = [
 // Instalación del evento del service worker, cacheando todos los recursos iniciales
 self.addEventListener('install', (event) => {
     event.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => {
+        caches.open('PWA_CACHE').then((cache) => {
             return cache.addAll(urlsToCache);
         })
     );
