@@ -3,7 +3,7 @@ const urlsToCache = [
     '/', //cacheamos la rama principal
     'index.html', //cacheamos el index o main
     'style.css', //cacheamos los estilos
-    'script.js'//cacheamos los script
+    'script.js',//cacheamos los script
     'manifest.json'//cacheamos los script
 ];
 
